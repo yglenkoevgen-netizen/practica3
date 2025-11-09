@@ -1,13 +1,115 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practica3</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Практична №3</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4d8a6; /* Бежевий фон */
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+    }
+
+    .card {
+      max-width: 350px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 8px 8px 0px #000;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card__image img {
+      width: 100%;
+      display: block;
+    }
+
+    .card__content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 18px;
+    }
+
+    .card__tag {
+      display: inline-block;
+      background-color: #ffd966;
+      color: #000;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    .card__date {
+      font-size: 12px;
+      color: #333;
+    }
+
+    .card__title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .card__description {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .card__description strong {
+      font-weight: bold;
+    }
+
+    .card__author {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .card__author img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+    }
+
+    .card__author-name {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card__image">
+      <img src="Blog Image.png" alt="Зображення блогу">
+    </div>
+    <div class="card__content">
+      <span class="card__tag">HTML & CSS</span>
+      <span class="card__date">Публікація 21 Вересня 2025</span>
+      <h2 class="card__title">Практична №3</h2>
+      <p class="card__description">
+        Мета практичної роботи полягає в тому, щоб налаштувати середовище розробки 
+        <strong>VS Code</strong>, а також реалізувати картку блогу для вдосконалення 
+        фундаментальних навичок з <strong>HTML та CSS</strong>.
+      </p>
+      <div class="card__author">
+        <img src="avatar_male.png" alt="Автор">
+        <span class="card__author-name">Угленко Євгеній</span>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
